@@ -1,6 +1,8 @@
+import factory.AppFactory;
+import model.Payment;
 
 public class Demo04 {
     public static void main(String[] args) {
-        System.out.println(new PaymentService().pay(new Payment("UPI", 499)));
+        System.out.println(AppFactory.getPaymentService().pay(new Payment("UPI", 499)));
     }
 }
